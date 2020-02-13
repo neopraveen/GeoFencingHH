@@ -18,6 +18,8 @@ public class PolygonUtils {
         return instance;
     }
 
+    //This function checks whether the given location is inside fence or not.
+    // If location is not inside fence, whether the distance is less than accuracy then it considers as inside the fence.
     public boolean isLocationWithinArea(LatLng geoPoint, double accuracy, List<LatLng> geoFences) {
         //Checking if coordinate is inside the GeoFence.
         boolean isCoordinateInsideFence = coordinateIsInsidePolygon(geoPoint, geoFences);
