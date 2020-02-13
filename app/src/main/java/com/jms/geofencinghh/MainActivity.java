@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TAG = "GEO_FENCE";
     ArrayList<String> logs = new ArrayList<>();
     ArrayAdapter<String> logAdapter;
-    //Most of fields are unused, still keeping for future use.
+    //Most of fields are unused, still keeping for further use.
     ArrayList<HubGeoFenceJsonModel> hubGeoFenceJsonModels = new ArrayList<>();
     ArrayList<ArrayList<LatLng>> hubGeoFences = new ArrayList<>();
     ListView listView;
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             double accuracy = getAccuracy();
             findCheckPointOnFence(new LatLng(latitude, longitude), accuracy);
         } else {
-            showLogs("Invalid Co-ordinates");
+            showLogs("Invalid Coordinates");
         }
     }
 

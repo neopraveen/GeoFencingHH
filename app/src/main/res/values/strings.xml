@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GeoFencingHH</string>
+    <string name="app_name">GeoFencing HHub</string>
     <string name="check_now">Check Now</string>
     <string name="enter_accuracy">Enter Accuracy</string>
     <string name="enter_long_here">Enter Long here</string>

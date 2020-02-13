@@ -19,12 +19,12 @@ public class PolygonUtils {
     }
 
     public boolean isLocationWithinArea(LatLng geoPoint, double accuracy, List<LatLng> geoFences) {
-        //Checking if co-ordinate is inside the GeoFence.
+        //Checking if coordinate is inside the GeoFence.
         boolean isCoordinateInsideFence = coordinateIsInsidePolygon(geoPoint, geoFences);
         if (isCoordinateInsideFence) {
             return true;
         } else {
-            //Co-ordinate is outside, now checking if distance is less than accuracy required or not.
+            //Coordinate is outside, now checking if distance is less than accuracy required or not.
             return checkForAccuracy(geoPoint, accuracy, geoFences);
         }
     }
@@ -66,7 +66,6 @@ public class PolygonUtils {
     }
 
     public boolean checkForAccuracy(LatLng geoPoint, double accuracyInMeters, List<LatLng> geoFences) {
-
         if (geoPoint == null || geoFences == null) {
             return false;
         }
