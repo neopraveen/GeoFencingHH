@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/logRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:background="@color/logsBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:background="@color/inputPanelBg"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_padding"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/enter_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_lat_here"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="15"
+                android:textSize="@dimen/standard_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_padding"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/enter_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_long_here"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="15"
+                android:textSize="@dimen/standard_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_padding"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/enter_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_accuracy"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:textSize="@dimen/standard_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/checkNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="20dp"
+                android:text="@string/check_now"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resetAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@color/colorAccent"
+                android:padding="20dp"
+                android:text="@string/reset_all"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

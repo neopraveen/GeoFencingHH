@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GeoFencingHH</string>
+    <string name="check_now">Check Now</string>
+    <string name="enter_accuracy">Enter Accuracy</string>
+    <string name="enter_long_here">Enter Long here</string>
+    <string name="enter_lat_here">Enter Lat here</string>
+    <string name="reset_all">Reset All</string>
+</resources>
